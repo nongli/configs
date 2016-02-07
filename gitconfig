@@ -1,0 +1,15 @@
+[alias]
+	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+[user]
+	name = Nong Li
+	email = nongli@gmail.com
+[diff]
+	tool = bc3
+[difftool]
+	prompt = false
+[core]
+	editor = /usr/bin/vim
+[filter "lfs"]
+	required = true
+	clean = git-lfs clean %f
+	smudge = git-lfs smudge %f
