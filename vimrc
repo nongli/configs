@@ -119,35 +119,6 @@ vnoremap <C-D> <LT>
 " Highlighting
 set matchpairs+=<:>
 
-" Plugins
-filetype off                  
-" set the runtime path to include Vundle and initialize
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
-" let Vundle manage Vundle, required
-Plugin 'VundleVim/Vundle.vim'
-Plugin 'scrooloose/nerdtree'
-Plugin 'scrooloose/nerdcommenter'
-Plugin 'tpope/vim-fugitive'
-Plugin 'tpope/vim-sensible'
-Plugin 'derekwyatt/vim-scala'
-Plugin 'rhysd/vim-clang-format'
-Plugin 'octol/vim-cpp-enhanced-highlight'
-call vundle#end()            " required
-
-nnoremap <leader>n :NERDTreeToggle<cr>
-nnoremap <leader>f :ClangFormat<cr>
-
-" Style Formats
-" get rid of the default style of C comments, and define a style with two stars
-" at the start of `middle' rows which (looks nicer and) avoids asterisks used
-" for bullet lists being treated like C comments; then define a bullet list
-" style for single stars (like already is for hyphens):
-filetype plugin indent on    " required
-set comments-=s1:/*,mb:*,ex:*/
-set comments+=s:/*,mb:**,ex:*/
-set comments+=fb:*
-
 " for C-like programming, have automatic indentation:
 autocmd FileType c,cpp,slang set cindent
 
