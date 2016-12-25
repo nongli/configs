@@ -1,0 +1,8 @@
+alias ls='ls -FG'
+alias gs='git status'
+alias gb='git branch'
+alias gl='git log --graph --full-history --all --color --pretty=format:"%x1b[31m%h%x09%x1b[32m%d%x1b[0m%x20%s"'
+alias gcp='git cherry-pick'
+alias m='make -j12'
+alias eclipse='open -a ~/eclipse/java-neon/Eclipse.app'
+
