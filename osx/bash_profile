@@ -1,8 +1,11 @@
+export PS1="\[\033[1;35m\]\W\[\033[0m\]$ "
 alias ls='ls -FG'
 alias gs='git status'
 alias gb='git branch'
 alias gl='git log --graph --full-history --all --color --pretty=format:"%x1b[31m%h%x09%x1b[32m%d%x1b[0m%x20%s"'
+alias glg='git log --date-order --all --graph --format="%C(green)%h%Creset %C(yellow)%an%Creset
+%C(blue bold)%ar%Creset %C(red bold)%d%Creset%s"'
+alias glg2='git log --date-order --all --graph --name-status --format="%C(green)%H%Creset
+%C(yellow)%an%Creset %C(blue bold)%ar%Creset %C(red bold)%d%Creset%s"'
 alias gcp='git cherry-pick'
 alias m='make -j12'
-alias eclipse='open -a ~/eclipse/java-neon/Eclipse.app'
-
